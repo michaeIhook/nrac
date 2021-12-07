@@ -260,7 +260,7 @@ function Library:CreateWindow(Config, Parent)
 				end)
 
 				Button.MouseButton1Up:Connect(function()
-					Button.BackgroundColor3 = Color3.fromRGB(50,50,50)
+					Button.BackgroundColor3 = Color3.fromRGB(255,255,255)
 				end)
 
 				Button.MouseLeave:Connect(function()
@@ -444,7 +444,6 @@ function Library:CreateWindow(Config, Parent)
 				
 				Slider.Title.Text = Name
 				Slider.Slider.Bar.Size = UDim2.new(Min / Max,0,1,0)
-				Slider.Slider.Bar.BackgroundColor3 = Config.Color
 				Slider.Value.PlaceholderText = tostring(Min / Max)
 				Slider.Title.Size = UDim2.new(1,0,0,Slider.Title.TextBounds.Y + 5)
 				Slider.Size = UDim2.new(1,-10,0,Slider.Title.TextBounds.Y + 15)
